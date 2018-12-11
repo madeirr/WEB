@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap-Basis-Vorlage</title>
+      
+
+    <!-- Bootstrap -->
+   <!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optionales Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+      <style type="text/css">
+         body{background-image:url(https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);background-size:cover;font-family: 'Lato', sans-serif;background-attachment: fixed;background-position: center;}
+          #Titel{
+              height: 30px;
+              width: 30px;
+          }
+          
+          #reservation{
+              color: black;
+              margin-top: 50px;
+              margin-left: 30px;           
+              
+          }
+          
+          h1{
+              color:white;
+          }
+          p{
+              color:white;
+          }
+          
+      </style>
+
+	</head>
+	<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: rgba(255, 254, 254, 0.81);" >
+          <div class="container-fluid">
+            <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Navigation ein-/ausblenden</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="Restaurant_Start.html">
+                <img id="Titel" src="http://www.qlwebik.info/thumbs/food-and-drinks/beer/beer-03.png">
+              </a>
+            </div>
+            <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav"> 
+                <li><a href="#"><strong>About us</strong></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Speisekarte </strong><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="speisekarte_Vorspeise_Aktiv.html">Vorspeisen</a></li>
+                    <li><a href="speisekarte_Fleisch_Aktiv.html">Fleischgerichte</a></li>
+                    <li><a href="speisekarte_Fisch_Aktiv.html">Fischgerichte</a></li>
+                    <li><a href="speisekarte_Nachspeise_Aktiv.html">Nachspeisen</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="speisekarte_Getränke_Aktiv.html">Getränke</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Suchen">
+                </div>
+                <button type="submit" class="btn btn-default">Los</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">                
+                <li> <a href="Login_Mitarbeiter.html"><strong>Mitarbeiter</strong></a></li>
+                
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Gast </strong><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Login_Mitarbeiter.html">Bereits Kunde?</a></li>
+                    <li><a href="Login_Mitarbeiter.html">Hier registrieren!</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        
+      <div id="reservation">
+          
+        <h1> Hier können Sie bequem Ihren Tisch reservieren</h1>
+  
+        <form action="tischreservierung.php" method="post">
+        <p>Wählen Sie ihr gewünschtes Datum aus: </p><input type = "date" name = "datum"><br><br>
+        <p>Wählen Sie ihren gewünschten Tisch: </p><input list = "tisch" name = "tisch_name">
+            <datalist id="tisch">
+                <option value="Stammtisch">
+                <option value="Eckbank">
+                <option value="Terrasse">
+                <option value="Lounge">
+                <option value="Bartisch">
+            </datalist><br><br>
+        <p>Bitte geben Sie ihren Namen ein: </p><input type="" name="name"><br><br>
+        <p>Wählen Sie die Anzal der Gäste aus: </p><input type = "number" name ="anzahlguest" placeholder="Bsp. 1" min="1" max="6"><br><br>
+        <input type="submit" value="Reservieren">
+        </form>
+         
+      </div>
+       
+     <script type="text/javascript">
+        
+        $("#mydate").datepicker({ dateFormat: "dd-mm-yy"}).datepicker("setDate", new Date());
+         
+      </script>
+    
+
+       
+	</body>
+</html>
+
