@@ -1,0 +1,9 @@
+TO DO'S:
+
+--> Speisekarte mit "Cards" für Bestellungen (jedoch hier beachten: Login muss erfolgt sein, wenn nicht dann verweis auf Login seite); Verschiedene Gerichte können hinzugefügt werden (wird eigentlich dem Tisch hinzugefügt)
+
+--> Mitarbeiter können Kundentabelle einsehen, sodass sie auch Tischnummer mit Bestellungen einsehen können; Bei Erstellung einer Rechnung wird Datensatz mit Gerichten auf "null" gesetzt 
+
+--> Übersicht mit Bestellungen (Im Mitarbeiter Portal) 
+
+--> 

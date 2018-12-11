@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Restaurant Bavaria</title>
+	
+	   
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optionales Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Das neueste kompilierte und minimierte JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+      <style type="text/css">
+          body{background-image:url(https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);background-size:cover;font-family: 'Lato', sans-serif;background-attachment: fixed;background-position: center;}.Dataentry{font-size:35px;border:4px solid #fff;background-color:rgba(255,254,254,.5);width:1000px;height:auto;position:center;left:100;margin:auto;display:flex-block;text-align:center;overflow:auto;border-bottom:none;border-radius: 20px}.entry{text-align:justify;margin-left:10px;margin-right:10px}.text{margin-top:100px}.Headline{padding-bottom:10px;border-bottom:4px solid #fff;font-size:40px}
+          #Titel{
+              height: 30px;
+              width: 30px;
+          }
+          
+        </style>
+  <script type="text/javascript">
+    function checkmyconnect()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","db_connection.php",true);
+xmlhttp.send();
+}
+</script>
+	</head>
+	<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: rgba(255, 254, 254, 0.81);" >
+          <div class="container-fluid">
+            <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Navigation ein-/ausblenden</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="Restaurant_Start.html">
+                <img id="Titel" src="http://www.qlwebik.info/thumbs/food-and-drinks/beer/beer-03.png">
+              </a>
+            </div>
+            <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav"> 
+                <li><a href="#"><strong>About us</strong></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Speisekarte </strong><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="speisekarte (2).html">Vorspeisen</a></li>
+                    <li><a href="speisekarte (2).html">Fleischgerichte</a></li>
+                    <li><a href="speisekarte (2).html">Fischgerichte</a></li>
+                    <li><a href="speisekarte (2).html">Nachspeisen</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="speisekarte (2).html">Getränke</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Suchen">
+                </div>
+                <button type="submit" class="btn btn-default">Los</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">         
+              <li> <a href="index.html" action="Logout.php"><strong>Ausloggen</strong></a></li>       
+                <li> <a href="Login_Mitarbeiter.html"><strong>Mitarbeiter</strong></a></li>
+
+                
+                  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Gast </strong><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Login_Gast.html">Bereits Kunde?</a></li>
+                    <li><a href="Registration_Gast.html">Hier registrieren!</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+		<div class="text">
+			<div class="Dataentry" style="width: 50%;height:60%;">
+				<h1 class="Headline">Specials of Today</h1>
+					<p class="entry">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+		</div>
+		<div class="Dataentry" style="width: 50%;height:60%;">
+			<h1 class="Headline">Specials of Tomorrow</h1>
+				<p class="entry">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+		</div>
+		</div>
+    <button type="button" onclick="checkmyconnect()">Check Connection</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
+

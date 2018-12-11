@@ -1,0 +1,14 @@
+body {
+	color: white;
+	background-image: url(https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size:cover;
+	font-family:'Lato', sans-serif;
+}
+
+.tags{
+	font-size: 20px;
+}
+
+.text{
+font-size: 14px;
+}

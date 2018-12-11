@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Registration für Gäste</title>
+
+    <!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optionales Theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Das neueste kompilierte und minimierte JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+      <style type="text/css">body{background-image:url(https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);background-size:cover;font-family: 'Lato', sans-serif;background-attachment: fixed;background-position: center;color:white;}
+          
+          .form-horizontal{
+              margin-top: 20px;
+              width: 400px;
+              margin: 0 auto;
+              
+          }
+          
+          #header{
+              position: relative;
+              text-align: center;
+          }
+          
+          
+         
+        </style>
+      
+    </head>
+    
+    <body>
+        
+       
+        <div id="header"">
+        <h2><strong>Ihr persönlicher Gast-Account</h2>
+        <h3>Hier können Sie sich mit ihrer Email-Adresse registrieren, um so online ihren gewünschten Tisch zu reservieren und ihre Bestellungen aufzugeben und noch viel mehr Vorteile zu genießen</strong></h3>
+            
+        </div>
+    
+        <form action="connection.php" class="form-horizontal" method="POST">
+          
+            
+          <div class="form-group">
+            <label for="eingabefeldText" class="col-sm-2 control-label">Vorname</label>
+            <div class="col-sm-10">
+              <input name="vorname" type="text" class="form-control" id="eingabefeldText" placeholder="z.B. Max">
+            </div>
+          </div>
+            
+          <div class="form-group">
+            <label for="eingabefeldText" class="col-sm-2 control-label">Nachname</label>
+            <div class="col-sm-10">
+              <input name="nachname"type="text" class="form-control" id="eingabefeldText" placeholder="z.B.Mustermann">
+            </div>
+          </div>
+            
+          <div class="form-group">
+            <label for="eingabefeldUsername" class="col-sm-2 control-label">Email-Adresse</label>
+            <div class="col-sm-10">
+              <input name="email" type="email" class="form-control" id="eingabefeldEmail3" placeholder="z.B. max@mustermann.com">
+            </div>
+          </div>
+            
+          <div class="form-group">
+            <label for="eingabefeldUsername" class="col-sm-2 control-label">Email-Adresse bestätigen</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="eingabefeldEmail3" placeholder="z.B. max@mustermann.com">
+          </div>
+              
+          </div>
+          <div class="form-group">
+            <label for="eingabefeldPasswort3" class="col-sm-2 control-label">Passwort</label>
+            <div class="col-sm-10">
+              <input name="password" type="password" class="form-control" id="eingabefeldPasswort3" placeholder="Passwort">
+            </div>
+          </div> 
+          <div class="form-group">
+            <label for="eingabefeldPasswort3" class="col-sm-2 control-label">Passwort bestätigen</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="eingabefeldPasswort3" placeholder="Passwort">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Anmeldung speichern
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-success" value="Insert">Registrieren</button>
+            </div>
+          </div>
+        </form>
+        
+        <script type="text/javascript">
+         
+        </script>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+     
+      
+      </script>
+    
+    </body>
+    
+</html>
