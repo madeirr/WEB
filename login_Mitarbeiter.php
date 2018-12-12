@@ -4,12 +4,12 @@ session_start(); //Nicht vergessen
 $_SESSION['username']=null;
 
 
-$email=$_POST['email'];
+$username=$_POST['username'];
 $password=$_POST['password'];
 
 
 
-$result = $link->query("SELECT * FROM LOGIN_DATEN WHERE password='$password' AND email= '$email';");
+$result = $link->query("SELECT * FROM LOGIN_MITARBEITER WHERE password='$password' AND username= '$username';");
 
 
 
